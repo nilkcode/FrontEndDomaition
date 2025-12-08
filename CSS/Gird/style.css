@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body  {
+    width: 100%;
+    height: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* 
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20%;
+    padding: 5px;
+}
+
+.elem {
+   
+    background-color: crimson;
+    border: 3px solid #000;
+}
+
+
+nav {
+    background-color: crimson;
+    padding: 10px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% 20% 20% 20% ;
+    align-items: center;
+    justify-items: center;
+
+}
+nav > h1 {
+    justify-self:start;
+} */
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #dadada;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 26% 55% 19%;
+}
+
+#left-top-left {
+   padding: 40px;
+
+}
+#square  {
+    width: 30px;
+    height: 30px;
+    rotate: 45deg;
+    background-color: black;
+}
+
+#left-top-right {
+   padding: 40px;
+   justify-self:right;
+   text-align: right;
+}
+
+
+#left-top-right h4 {
+    margin-bottom: 50px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#left-top-right h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+}
+
+
+
+
+
+#left-center {
+  grid-column: 1/3;
+  padding: 40px;
+}
+
+#left-center h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 6vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 6vw
+}
+
+#left-center h1:nth-child(2n) {
+    text-align: center;
+}
+
+
+#left-bottom {
+  grid-column: 1/3;
+  padding: 40px;
+}
+#left-bottom p {
+    width: 70%;
+    font-size: 1.3rem;
+    color: #767676;
+    font-weight: 400;
+}
+
+
+#right {
+ grid-column: 3;
+ grid-row: 1/4;
+ padding: 40px;
+ padding-right: 120px;
+}
+
+#right video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+#arrow {
+    width: 80px;
+    height: 80px;
+    background-color: #bd4f00;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+#arrow i  {
+    font-size: 2rem;
+    color: #fff;
+}
+
+@media (max-width:600px){
+    
+}
