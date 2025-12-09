@@ -4,10 +4,11 @@
     box-sizing: border-box;
 }
 
-html, body  {
+html,
+body {
     width: 100%;
     height: 100%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 /* 
@@ -52,10 +53,11 @@ nav > h1 {
 }
 
 #left-top-left {
-   padding: 40px;
+    padding: 40px;
 
 }
-#square  {
+
+#square {
     width: 30px;
     height: 30px;
     rotate: 45deg;
@@ -63,9 +65,9 @@ nav > h1 {
 }
 
 #left-top-right {
-   padding: 40px;
-   justify-self:right;
-   text-align: right;
+    padding: 40px;
+    justify-self: right;
+    text-align: right;
 }
 
 
@@ -86,8 +88,8 @@ nav > h1 {
 
 
 #left-center {
-  grid-column: 1/3;
-  padding: 40px;
+    grid-column: 1/3;
+    padding: 40px;
 }
 
 #left-center h1 {
@@ -104,9 +106,10 @@ nav > h1 {
 
 
 #left-bottom {
-  grid-column: 1/3;
-  padding: 40px;
+    grid-column: 1/3;
+    padding: 40px;
 }
+
 #left-bottom p {
     width: 70%;
     font-size: 1.3rem;
@@ -116,10 +119,10 @@ nav > h1 {
 
 
 #right {
- grid-column: 3;
- grid-row: 1/4;
- padding: 40px;
- padding-right: 120px;
+    grid-column: 3;
+    grid-row: 1/4;
+    padding: 40px;
+    padding-right: 120px;
 }
 
 #right video {
@@ -144,11 +147,65 @@ nav > h1 {
     padding: 30px;
 }
 
-#arrow i  {
+
+
+#arrow i {
     font-size: 2rem;
     color: #fff;
+    transform: rotate(360deg);
 }
 
-@media (max-width:600px){
-    
+@media (max-width:600px) {
+
+    #main {
+
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 60px 40% 30%;
+    }
+
+    #right {
+        grid-column: 1/4;
+        grid-row: 4;
+    }
+
+    #right {
+        padding: 20px;
+    }
+
+    #left-top-right {
+        display: none;
+    }
+
+    #left-center h1 {
+               font-size: 13vw;
+        line-height: 15.5vw;
+    }
+
+    #left-bottom p {
+        width: 100%;
+        font-size: 1.1rem;
+
+    }
+
+    #left-bottom {
+        grid-column: 1 / 3;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #left-center {
+        padding: 82px 50px;
+    }
+
+    #arrow {
+
+        top: 79%;
+
+    }
+    #arrow i {
+        transform:rotate(90deg);
+    }
+
 }
