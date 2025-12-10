@@ -1,0 +1,195 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+ 
+ 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+     font-family: "Roboto Mono", monospace;
+    
+ }
+
+ #main {
+    width: 100%;
+    height: 100%;
+ }
+
+
+ /* Header Part Start From Here */
+
+ nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 6rem;
+    align-items: center;
+    padding: 0px 40px;
+    
+ }
+
+  nav  ul{ 
+ list-style: none;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+nav ul > li > a {
+    text-decoration: none; 
+    font-size: 1rem;
+    font-weight: 600;
+     color: #201f1f;
+}
+
+nav ul > li > a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #201f1f;
+    border-bottom: 5px;
+   
+}
+
+nav ul > li > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 5%;
+    background-color: #222222;
+    transition: width 0.3s ease; /* animation */
+}
+nav ul > li > a:hover::after {width: 100% ;}   /* grow from left to right */
+
+nav ul > li > span {
+       display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #201f1f;
+    border-radius: 50%;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+#description {
+    padding: 3rem 10rem;
+    width: 68%;
+}
+#description > h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+#description-second {
+    padding: 3rem 5rem 10rem 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+.description-left {
+    width: 30%
+}
+
+.description-left > p {
+   line-height: 1.45;
+}
+
+.verticalNavbar {
+    width: 20%;
+}
+.verticalNavbar ul li a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.verticalNavbar ul li a>i {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transform: rotate(304deg);
+}
+
+.verticalNavbar ul li a:hover>i {
+    opacity: 1;
+}
+
+.verticalNavbar ul li a { color: #2e2e2e};
+
+.verticalNavbar ul>li:first-child {
+     border-top: 2px solid #2e2e2e;
+}
+.verticalNavbar ul>li:last-child { border-bottom: none;}
+
+.verticalNavbar ul>li {
+    list-style: none;
+    padding:20px  0px;
+    border-bottom: 2px solid #2e2e2e;
+}
+
+#fashion-banner {
+  width: 100%;
+    height: 100vh; 
+    background-image: url('./bgbg.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+@media (max-width:600px) {
+    nav {
+
+        justify-content: center;
+        height: 5rem;
+    }
+
+    #description {
+        padding: 2rem 2rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #description>h1 {
+        font-size: 3.2rem;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+    
+    #description-second {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 35px;
+        padding: 2rem 2rem;
+    }
+.description-left {
+    width: 100%;
+}
+
+.verticalNavbar {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.verticalNavbar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.verticalNavbar ul>li:last-child {
+    border-bottom: 2px solid #2e2e2e;
+}
+}
