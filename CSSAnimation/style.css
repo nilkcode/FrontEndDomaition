@@ -9,7 +9,47 @@ html, body {
     width: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 10px;
+    background-color: rgb(22, 22, 22);
+    padding: 2vw;
 }
+
+
+button {
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid cyan;
+    width: 150px;
+    color: cyan;
+    font-weight: 600;
+    position: relative;
+    transition: all linear 0.5s;
+    overflow: hidden;
+
+}
+
+button::after {
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #00ffff63;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate();
+    transform: translate(-50% , -50%) scale(0);
+    transition: all linear 0.5s;
+    z-index: 1;
+    
+}
+
+button:hover::after {
+        transform: translate(-50% , -50%) scale(3);
+
+}
+
+
+
 
 
 /* First Animation Lecture  */
